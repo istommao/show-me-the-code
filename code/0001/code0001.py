@@ -7,9 +7,7 @@ import string
 
 
 def random_str(length=8):
-    lst = list(string.ascii_letters)
-    random.shuffle(lst)
-    return ''.join(lst[:length])
+    return ''.join(random.choice(string.ascii_letters) for x in range(length))
 
 
 def main(n):
